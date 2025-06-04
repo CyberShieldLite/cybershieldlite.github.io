@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberShield Lite | Pricing</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/cybershield_logo.png" type="image/png">
+  <style>
+    .pricing-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .pricing-container h1 {
+      font-size: 2rem;
+      color: #0A1F44;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .plan-box {
+      background: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.03);
+    }
+
+    .plan-box h2 {
+      font-size: 1.5rem;
+      color: #00D1B2;
+      margin-bottom: 0.5rem;
+    }
+
+    .plan-price {
+      font-size: 1.25rem;
+      color: #0A1F44;
+      margin-bottom: 1rem;
+    }
+
+    .plan-box ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .plan-box li {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .plan-cta {
+      background: #00D1B2;
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem 1.25rem;
+      border-radius: 4px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .plan-cta:hover {
+      background: #009f8a;
+    }
+  </style>
+</head>
+<body>
+<!-- ✅ Cookie Consent Banner (Persistent) -->
+<div id="cookie-banner" style="display:none; background: #f9f9f9; color: #333; padding: 0.7rem; text-align: center; font-size: 0.9rem; border-bottom: 1px solid #ccc;">
+  This website uses cookies and collects basic info for analytics and service delivery. By using this site, you agree to our
+  <a href="privacy.html" style="color: #0A1F44; text-decoration: underline;">Privacy Policy</a>.
+  <button onclick="acceptCookies()" style="margin-left: 1rem; background: #00D1B2; color: white; border: none; padding: 0.3rem 0.8rem; cursor: pointer; border-radius: 4px;">OK</button>
+</div>
+
+<script>
+  // Check localStorage and show banner if not accepted
+  window.addEventListener('DOMContentLoaded', function () {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  });
+
+  function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+<header>
+  <div class="nav-container">
+    <img src="assets/back.png" alt="CyberShield Lite Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="request.html">Request a Scan</a>
+      <a href="documents.html">Documents</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pricing-container">
+  <h1>💳 Choose Your Cybersecurity Plan</h1>
+  <p>Flexible, affordable, and built for every size of organization.</p>
+
+  <div class="pricing-grid">
+    <div class="plan-box">
+      <h2>🟢 Basic Plan</h2>
+      <div class="plan-price">KES 2,500 / month</div>
+      <ul>
+        <li>✔ 2 vulnerability scans monthly</li>
+        <li>✔ CVE overview + basic patch tips</li>
+        <li>✔ PDF report via email</li>
+      </ul>
+      <a href="request.html" class="plan-cta">Select Basic Plan</a>
+    </div>
+
+    <div class="plan-box">
+      <h2>🟡 Pro Plan</h2>
+      <div class="plan-price">KES 7,500 / month</div>
+      <ul>
+        <li>✔ 10 full scans (Nmap + OpenVAS)</li>
+        <li>✔ CVSS scores, CVE patch links, severity tags</li>
+        <li>✔ Branded PDF report + patch recommendations</li>
+        <li>✔ WhatsApp delivery + email</li>
+        <li>✔ Priority support</li>
+      </ul>
+      <a href="request.html" class="plan-cta">Select Pro Plan</a>
+    </div>
+  </div>
+</main>
+
+<footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem 1rem 0.5rem 1rem;">
+  <p style="margin: 0 0 0.5rem 0; font-size: 1rem;">
+    &copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.
+  </p>
+
+  <p style="margin: 0; font-size: 0.9rem;">
+    <a href="terms.html" style="color: #00D1B2; text-decoration: none; margin-right: 1rem;">Terms of Service</a>
+    <a href="privacy.html" style="color: #00D1B2; text-decoration: none; margin-right: 1rem;">Privacy Policy</a>
+    <a href="compliance.html" style="color: #00D1B2; text-decoration: none;">Compliance</a>
+  </p>
+
+  <div style="width:100%; overflow:hidden; margin-top:0.5rem;">
+    <img src="assets/footer.png"
+         alt="CyberShield Lite Footer Banner"
+         style="width:100%; max-height:1.5cm; object-fit:contain; display:block;">
+  </div>
+  <p style="font-size: 0.75rem; color: #ccc; margin-top: 1rem;">
+  Disclaimer: CyberShield Lite provides passive vulnerability scanning only. We do not conduct penetration testing, exploit delivery, or unauthorized assessments. All scans are performed on client-authorized systems only.
+</p>
+
+</footer>
+
+
+</body>
+</html>

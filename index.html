@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberShield Lite — Cybersecurity Made Simple</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/back.png" type="image/png">
+</head>
+<body>
+<!-- ✅ Cookie Consent Banner (Persistent) -->
+<div id="cookie-banner" style="display:none; background: #f9f9f9; color: #333; padding: 0.7rem; text-align: center; font-size: 0.9rem; border-bottom: 1px solid #ccc;">
+  This website uses cookies and collects basic info for analytics and service delivery. By using this site, you agree to our
+  <a href="privacy.html" style="color: #0A1F44; text-decoration: underline;">Privacy Policy</a>.
+  <button onclick="acceptCookies()" style="margin-left: 1rem; background: #00D1B2; color: white; border: none; padding: 0.3rem 0.8rem; cursor: pointer; border-radius: 4px;">OK</button>
+</div>
+
+<script>
+  // Check localStorage and show banner if not accepted
+  window.addEventListener('DOMContentLoaded', function () {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  });
+
+  function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+<header class="navbar">
+  <div class="nav-container">
+    <img src="assets/back.png" alt="CyberShield Lite Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="request.html">Request a Scan</a>
+      <a href="documents.html">Documents</a>
+      <a href="faq.html">FAQ</a>
+      <a href="portal.html">Portal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="background: url('assets/cyber.jpg') center/cover no-repeat;">
+  <div class="hero-content">
+    <h1>CyberShield Lite</h1>
+    <p>Kenya’s Lightweight Vulnerability Scanner for SMEs, Startups & NGOs</p>
+    <a href="request.html" class="btn-primary">Request a Vulnerability Scan</a>
+  </div>
+</section>
+
+<section class="about">
+  <div class="content">
+    <h2>What is CyberShield Lite?</h2>
+    <p>
+      CyberShield Lite is a simplified cybersecurity service designed for small businesses,
+      NGOs, and individual users. It runs remote vulnerability scans using industry-standard tools
+      like Nmap and OpenVAS — generating a detailed PDF report with CVEs, CVSS scores, and
+      patch recommendations.
+    </p>
+  </div>
+</section>
+
+<section class="benefits">
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>✅ Remote scanning — no installation needed</li>
+    <li>🔍 Accurate CVE detection with patch guidance</li>
+    <li>📄 Legal NDA + Consent Forms provided</li>
+    <li>💼 Affordable plans — from KES 2,500/month</li>
+  </ul>
+</section>
+
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="carousel">
+    <div class="testimonial active">
+      <img src="assets/avatar1.png" class="avatar" alt="Client 1" />
+      <p>"CyberShield Lite gave us a clear view of our weaknesses — simple and effective."</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <strong>– NGO, Nairobi</strong>
+    </div>
+    <div class="testimonial">
+      <img src="assets/avatar2.png" class="avatar" alt="Client 2" />
+      <p>"We received a detailed report with patch steps. The NDA gave us peace of mind."</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <strong>– Tech Startup, Westlands</strong>
+    </div>
+    <div class="testimonial">
+      <img src="assets/avatar3.png" class="avatar" alt="Client 3" />
+      <p>"Affordable, easy to use, and no installation needed. Highly recommended."</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <strong>– SME Owner, Mombasa</strong>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Start Protecting Your Business Today</h2>
+  <p>Get a vulnerability scan and detailed report in under 24 hours.</p>
+  <a href="request.html" class="btn-primary">Book My Scan</a>
+</section>
+<section class="compliance-badges" style="padding: 2rem; background: #f0f8ff; text-align: center;">
+  <h2 style="color: #0A1F44;">🔐 Compliance & Security Standards</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1.5rem;">
+
+    <div style="flex: 0 0 140px; text-align: center;">
+      <img src="assets/badge_gdpr.png" alt="GDPR Compliant" style="width: 60px;">
+      <p style="font-size: 0.9rem;">GDPR-Aligned</p>
+    </div>
+
+    <div style="flex: 0 0 140px; text-align: center;">
+      <img src="assets/badge_kdpa.png" alt="Kenya Data Protection Act" style="width: 60px;">
+      <p style="font-size: 0.9rem;">Kenya Data Protection Act</p>
+    </div>
+
+    <div style="flex: 0 0 140px; text-align: center;">
+      <img src="assets/badge_ssl.png" alt="SSL Secured" style="width: 60px;">
+      <p style="font-size: 0.9rem;">TLS/SSL Secured</p>
+    </div>
+
+    <div style="flex: 0 0 140px; text-align: center;">
+      <img src="assets/badge_cvss.png" alt="CVSS CVE Reporting" style="width: 60px;">
+      <p style="font-size: 0.9rem;">CVSS + CVE Reporting</p>
+    </div>
+
+    <div style="flex: 0 0 140px; text-align: center;">
+      <img src="assets/badge_consent.png" alt="Consent Based" style="width: 60px;">
+      <p style="font-size: 0.9rem;">Consent-Only Scanning</p>
+    </div>
+
+  </div>
+</section>
+
+<footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem 1rem 0.5rem 1rem;">
+  <p style="margin: 0 0 0.5rem 0; font-size: 1rem;">
+    &copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.
+  </p>
+
+  <p style="margin: 0; font-size: 0.9rem;">
+    <a href="terms.html" style="color: #00D1B2; text-decoration: none; margin-right: 1rem;">Terms of Service</a>
+    <a href="privacy.html" style="color: #00D1B2; text-decoration: none; margin-right: 1rem;">Privacy Policy</a>
+    <a href="compliance.html" style="color: #00D1B2; text-decoration: none;">Compliance</a>
+  </p>
+
+  <div style="width:100%; overflow:hidden; margin-top:0.5rem;">
+    <img src="assets/footer.png"
+         alt="CyberShield Lite Footer Banner"
+         style="width:100%; max-height:1.5cm; object-fit:contain; display:block;">
+  </div>
+  <p style="font-size: 0.75rem; color: #ccc; margin-top: 1rem;">
+  Disclaimer: CyberShield Lite provides passive vulnerability scanning only. We do not conduct penetration testing, exploit delivery, or unauthorized assessments. All scans are performed on client-authorized systems only.
+</p>
+
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let index = 0;
+    const testimonials = document.querySelectorAll(".testimonial");
+
+    function rotateTestimonials() {
+      testimonials.forEach(t => t.classList.remove("active"));
+      testimonials[index].classList.add("active");
+      index = (index + 1) % testimonials.length;
+    }
+
+    setInterval(rotateTestimonials, 6000);
+  });
+</script>
+
+</body>
+</html>

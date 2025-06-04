@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberShield Lite | Request a Scan</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/cybershield_logo.png" type="image/png">
+  <style>
+    .request-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .request-container h1 {
+      font-size: 2rem;
+      color: #0A1F44;
+      margin-bottom: 1rem;
+    }
+
+    .request-container p {
+      font-size: 1.05rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 800px;
+      margin-top: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+<!-- ✅ Cookie Consent Banner (Persistent) -->
+<div id="cookie-banner" style="display:none; background: #f9f9f9; color: #333; padding: 0.7rem; text-align: center; font-size: 0.9rem; border-bottom: 1px solid #ccc;">
+  This website uses cookies and collects basic info for analytics and service delivery. By using this site, you agree to our
+  <a href="privacy.html" style="color: #0A1F44; text-decoration: underline;">Privacy Policy</a>.
+  <button onclick="acceptCookies()" style="margin-left: 1rem; background: #00D1B2; color: white; border: none; padding: 0.3rem 0.8rem; cursor: pointer; border-radius: 4px;">OK</button>
+</div>
+
+<script>
+  // Check localStorage and show banner if not accepted
+  window.addEventListener('DOMContentLoaded', function () {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  });
+
+  function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+  <header>
+    <div class="nav-container">
+      <img src="assets/back.png" alt="CyberShield Lite Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="request.html">Request a Scan</a>
+        <a href="documents.html">Documents</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="request-container">
+    <h1>📋 Request a Vulnerability Scan</h1>
+    <p>
+      To begin your Vulnerability assessment, complete the secure form below. Our team will conduct a scan on your provided IP/Domain.
+    </p>
+    <p>
+      Within 24 hours, you will receive:
+      <ul>
+        <li>📝 A Non-Disclosure Agreement (NDA)</li>
+        <li>✅ Scan Authorization Consent Form</li>
+        <li>📄 A detailed PDF report with vulnerabilities, CVEs, CVSS scores & patch advice</li>
+        <li>📬 Delivery via email or WhatsApp</li>
+      </ul>
+    </p>
+    <iframe src="https://forms.gle/QVFX21bmYptGGRNBA" loading="lazy">
+      Your browser does not support iframes. Please use this link to access the form:
+      <a href="https://forms.gle/QVFX21bmYptGGRNBA">Request Form</a>
+    </iframe>
+  </main>
+
+  <footer style="background-color:#0A1F44; color:white; text-align:center; padding:1.5rem 1rem 0.5rem 1rem;">
+  <p style="margin: 0 0 0.5rem 0; font-size: 1rem;">
+    &copy; 2025 CyberShield Lite. Securing Kenya's Digital Future.
+  </p>
+
+  <p style="margin: 0; font-size: 0.9rem;">
+    <a href="terms.html" style="color: #00D1B2; text-decoration: none; margin-right: 1rem;">Terms of Service</a>
+    <a href="privacy.html" style="color: #00D1B2; text-decoration: none; margin-right: 1rem;">Privacy Policy</a>
+    <a href="compliance.html" style="color: #00D1B2; text-decoration: none;">Compliance</a>
+  </p>
+
+  <div style="width:100%; overflow:hidden; margin-top:0.5rem;">
+    <img src="assets/footer.png"
+         alt="CyberShield Lite Footer Banner"
+         style="width:100%; max-height:1.5cm; object-fit:contain; display:block;">
+  </div>
+    <p style="font-size: 0.75rem; color: #ccc; margin-top: 1rem;">
+  Disclaimer: CyberShield Lite provides passive vulnerability scanning only. We do not conduct penetration testing, exploit delivery, or unauthorized assessments. All scans are performed on client-authorized systems only.
+</p>
+
+</footer>
+
+</body>
+</html>
